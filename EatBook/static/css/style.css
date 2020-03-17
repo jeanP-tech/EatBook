@@ -1,0 +1,260 @@
+body {
+  font-family: 'Noto Serif KR';
+}
+
+#logo a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+header h1{
+  font-size: 50px;
+  margin-left: 40px;
+  display: inline;
+}
+
+header ul {
+  list-style: none;
+  margin-left: auto;
+}
+
+header ul a {
+  text-decoration: none;
+  color: #9B9B9B;
+}
+
+header ul li {
+  float: left;
+  margin-right: 20px;
+}
+
+#search {
+  height: 400px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2020-books-1577735514.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#search_container .fa-search {
+  position: absolute;
+  margin-top: 13px;
+  margin-left: 15px;
+}
+
+#search_container input {
+  width: 400px;
+  height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  border: white;
+  outline: none;
+}
+
+.center_text {
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+}
+
+#center_menu{
+  text-align: center;
+}
+
+#center_menu ul {
+  text-align: left;
+  list-style: none;
+  font-size: 30px;
+  color: #9B9B9B;
+}
+
+#center_menu ul li {
+  margin-bottom: 20px;
+}
+
+#menu_bar_container {
+  display: flex;
+  justify-content: center;
+}
+
+#menu_bar {
+  height: 50px;
+  width: 88%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#read_select {
+  margin-right: 20px;
+  height: 35px;
+  width: 120px;
+}
+
+#btn_search {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  outline:none;
+  font-size: 20px;
+}
+
+.btn_zoom {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+#menu_bar button {
+  cursor: pointer;
+  outline:none;
+  float: left;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+#plus, #minus {
+  border: none;
+  background-color: inherit;
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#read_list, #wish_list, #throw_list {
+  width: 90%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#read_list::after, #wish_list::after, #throw_list::after {
+  content: "";
+  flex: auto;
+}
+
+.book, .wish_book, .throw_book {
+  margin: 10px 10px 70px 0;
+  width: 320px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover_img, .wish_cover_img, .throw_cover_img {
+  width: 130px;
+}
+
+.cover_img {
+  cursor: pointer;
+}
+
+.book_info, .wish_book_info, .throw_book_info {
+  list-style: none;
+}
+
+.book_info li, .wish_book_info li, .throw_book_info li{
+  margin-bottom: 20px;
+}
+
+.book_title {
+  cursor: pointer;
+}
+
+.fa-arrow-left {
+  font-size: 40px;
+  margin-left: 50px;
+  color: black;
+}
+
+#detail_cover_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 510px;
+  margin-top: 50px;
+}
+
+#detail_book_info img {
+  margin-right: 70px;
+  width: 350px;
+}
+
+#detail_info {
+  width: 350px;
+  float: right;
+  margin-left: 100px;
+}
+
+#detail_info ul {
+    list-style: none;
+}
+
+#detail_info li {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#detail_info ul #title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#detail_info ul #comment {
+  margin-top: 50px;
+}
+
+#hashtag {
+  text-align: center;
+  margin: 70px 0;
+}
+
+#calendar_table {
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+}
+
+#calendar_table td {
+  width: 150px;
+  height: 100px;
+  text-align: left;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  vertical-align: top;
+}
+
+#mainBar td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#calendar_days td{
+  height: 20px;
+  vertical-align: middle;
+}
+
+#yearMonth  {
+  width: 250px;
+}
+
+#btn_calendar_prev, #btn_calendar_next {
+  font-size: 30px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}

@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>잇북</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Noto+Serif+KR&display=swap" rel="stylesheet">
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <h1 id="logo"><a href="main.html">Book</a></h1>
+      <ul>
+        <li><a href="library.html">Library</a></li>
+        <li><a href="#">ipsum</a></li>
+      </ul>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>
