@@ -8,18 +8,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Noto+Serif+KR&display=swap" rel="stylesheet">
     <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <!-- <script src="{% static 'js/select_box_change.js' %}" type="text/javascript" async></script>
+    <script src="{% static 'js/go_detail.js' %}" type="text/javascript" async></script> -->
+    <script src="{% static 'js/generate_show_none.js' %}" type="text/javascript" async></script>
+    <script src="{% static 'js/book_search.js' %}" type="text/javascript" async></script>
   </head>
   <body>
 
     <header>
-      <h1 id="logo"><a href="main.html">Book</a></h1>
+      <h1 id="logo"><a href="{% url 'main' %}">잇북</a></h1>
       <ul>
-        <li><a href="library.html">Library</a></li>
-        <li><a href="#">ipsum</a></li>
+        <li><a href="{% url 'library' %}">Library</a></li>
+        <li><a href="{% url 'login' %}">Log In</a></li>
+        <li><a href="{% url 'signup' %}">Sign Up</a></li>
       </ul>
     </header>
-
     {% block content %}
     {% endblock %}
   </body>
+
 </html>

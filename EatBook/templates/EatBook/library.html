@@ -1,0 +1,29 @@
+{% extends 'EatBook/base.html' %}
+{% block content %}
+
+    <div id="menu_bar_container">
+      <div id="menu_bar">
+        <select id="read_select">
+          <option value="readList">읽은 책</option>
+          <option value="wishList">읽고싶은 책</option>
+          <option value="throwList">읽다 만 책</option>
+        </select>
+
+        <button id="btn_search"> <i class="fas fa-search"></i> </button>
+
+        <span class="btn_zoom">
+          <button id="plus"> <i class="fas fa-plus"></i> </button>
+          <button id="minus"> <i class="fas fa-minus" id="zoom_out"></i> </button>
+        </span>
+      </div>
+    </div>
+
+    <div id="container">
+    </div>
+
+    <script src="generate_show_none.js"></script>
+    <script src="zoom.js"></script>
+    <script src="select_box_change.js"></script>
+    <script src="go_detail.js"></script>
+
+{% endblock %}

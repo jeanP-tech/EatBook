@@ -1,0 +1,22 @@
+{% extends 'EatBook/base.html' %}
+{% block content %}
+
+  <a href="{% url 'library' %}"> <i class="fas fa-arrow-left"></i> </a>
+
+  <div id="detail_cover_info">
+    <img src="images/voice.jpg" />
+    <div id="detail_info">
+      <ul>
+        <li id="title">목소리를 드릴게요</li>
+        <li>정세랑</li>
+        <li>🌟🌟🌟🌟</li>
+        <li>2020.2.8 ~ 2020.2.10</li>
+        <li id="comment">날카로운 비판조차 결 곱게 다듬은,<br>섬세하고 조심스러운 이들을 위한 놀이터.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="hashtag">#한국소설#정세랑#SF#단편소설</div>
+
+
+{% endblock %}
