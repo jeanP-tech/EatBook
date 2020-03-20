@@ -3,8 +3,11 @@
 
   <div id="search">
     <div id="search_container">
-      <i id="search_icon" class="fas fa-search"></i>
-      <input onkeyup="enterkey();" id="search_contents" type="text" placeholder="당신이 지금 읽고있는 책은 무엇인가요?" />
+      <!-- <i id="search_icon" class="fas fa-search"></i> -->
+      <form action="" method="get">
+        <input id="search_contents" name="query" type="search" placeholder="당신이 지금 읽고있는 책은 무엇인가요?" />
+        <input type="submit" value="검색">
+      </form>
     </div>
   </div>
 
@@ -24,11 +27,4 @@
     </div>
   </div>
 
-  <!-- <script type="text/javascript">
-    function enterkey() {
-      if (window.event.keyCode == 13) {
-        location.href="{% url 'searched_books' %}";
-      }
-    }
-  </script> -->
 {% endblock %}
