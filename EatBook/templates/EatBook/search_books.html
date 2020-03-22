@@ -1,11 +1,22 @@
 {% extends 'EatBook/base.html' %}
+{% load static %}
+
+{% block scripts %}
+  <script src="{% static 'js/book_search.js' %}" type="text/javascript" async></script>
+{% endblock %}
+
 {% block content %}
-
-
   <div id="searched_container">
-    <i id="search_icon" class="fas fa-search"></i>
-    <input id="searched_input" type="search" />
+    <!-- <i id="search_icon" class="fas fa-search"></i>
+    <input id="searched_input" value="{{ query }}" type="search" /> -->
+    <form action="" method="get">
+      <input id="searched_input" value="{{ query }}" name="query" type="search" />
+      <input type="submit" value="검색">
+    </form>
   </div>
 
-
+  <div id="container">
+    <div id="searched_list">
+    </div>
+  </div>
 {% endblock %}

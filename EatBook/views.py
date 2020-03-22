@@ -8,7 +8,7 @@ def main_search(request):
     if 'query' in request.GET:
         query = request.GET['query']
         return render(request, 'EatBook/search_books.html', {'query': query})
-        
+
     return render(request, 'EatBook/main.html', {})
     # query = request.GET.get('query', None)
     #
@@ -17,13 +17,12 @@ def main_search(request):
         # return HttpResponseRedirect('search_books', {'query':query})
 
 
-# def search_books(request, query):
-#     return HttpResponse("넘어온 데이터 : "+query)
+def search_books(request):
+    if 'query' in request.GET:
+        query = request.GET['query']
+        return render(request, 'EatBook/search_books.html', {'query': query})
 
-    # render(request, 'EatBook/search_books.html', {'query':query})
-    # return HttpResponseRedirect('search_books', {'query':query})
-    # return HttpResponseRedirect('search_books')
-    # render(request, 'EatBook/search_books.html',)
+    return render(request, 'EatBook/search_books.html', {})
 
 def library(request):
     return render(request, 'EatBook/library.html', {})

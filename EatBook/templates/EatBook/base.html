@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Noto+Serif+KR&display=swap" rel="stylesheet">
     <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    {% block scripts %}
     <!-- <script src="{% static 'js/select_box_change.js' %}" type="text/javascript" async></script>
     <script src="{% static 'js/go_detail.js' %}" type="text/javascript" async></script> -->
-    <script src="{% static 'js/generate_show_none.js' %}" type="text/javascript" async></script>
-    <script src="{% static 'js/book_search.js' %}" type="text/javascript" async></script>
+    <!-- <script src="{% static 'js/generate_show_none.js' %}" type="text/javascript" async></script> -->
+    {% endblock %}
   </head>
   <body>
 

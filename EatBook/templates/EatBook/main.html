@@ -1,11 +1,16 @@
 {% extends 'EatBook/base.html' %}
-{% block content %}
+{% load static %}
 
+{% block scripts %}
+  <script src="{% static 'js/book_search.js' %}" type="text/javascript" async></script>
+{% endblock %}
+
+{% block content %}
   <div id="search">
     <div id="search_container">
       <!-- <i id="search_icon" class="fas fa-search"></i> -->
       <form action="" method="get">
-        <input id="search_contents" name="query" type="search" placeholder="당신이 지금 읽고있는 책은 무엇인가요?" />
+        <input id="searched_input" name="query" type="search" placeholder="당신이 지금 읽고있는 책은 무엇인가요?" />
         <input type="submit" value="검색">
       </form>
     </div>
@@ -26,5 +31,4 @@
 
     </div>
   </div>
-
 {% endblock %}

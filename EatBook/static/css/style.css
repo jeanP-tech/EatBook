@@ -136,13 +136,14 @@ header ul li {
   justify-content: space-around;
 }
 
-#read_list, #wish_list, #throw_list {
+#read_list, #wish_list, #throw_list, #searched_list {
   width: 90%;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-#read_list::after, #wish_list::after, #throw_list::after {
+#read_list::after, #wish_list::after, #throw_list::after, #searched_list::after {
   content: "";
   flex: auto;
 }
@@ -150,6 +151,7 @@ header ul li {
 .book, .wish_book, .throw_book {
   margin: 10px 10px 70px 0;
   width: 320px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
